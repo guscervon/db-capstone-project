@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE PROCEDURE CancelOrder(IN id INT)
+BEGIN
+DELETE FROM Orders
+WHERE Orders.idOrders = id;
+END $$
+
+DELIMITER ;
